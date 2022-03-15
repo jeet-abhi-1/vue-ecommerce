@@ -30,19 +30,6 @@
                     stack-label
                   />
                 </div>
-                
-                
-                
-
-                <!-- <div class="row q-mb-sm">
-                  <q-input
-                    class="col"
-                    outlined
-                    v-model.trim="landmark"
-                    label="Landmark"
-                    stack-label
-                  />
-                </div> -->
 
                 <span
                   class="text-red text-caption text-weight-medium"
@@ -124,7 +111,6 @@ export default {
     return {
       tab: "Shipping Details",
       address: "",
-      // landmark: "",
       city: "",
       pincode: "",
     };

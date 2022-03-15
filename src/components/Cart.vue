@@ -11,7 +11,8 @@
       <q-item class="q-mb-sm">
         <q-item-section class="items-start text-h5">
           <q-item-label class="row items-center">
-            <q-icon size="md" name="shopping_cart" color="primary" />Cart Items :
+            <q-icon size="md" name="shopping_cart" color="primary" />Cart Items
+            :
           </q-item-label>
         </q-item-section>
       </q-item>
@@ -48,22 +49,21 @@
 </template>
 
 <script>
-
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
 
 export default {
-  name: 'Cart',
-  props: ['cartItems', 'totalPrice'],
+  name: "Cart",
+  props: ["cartItems", "totalPrice"],
   data() {
     return {};
   },
   methods: {
-    ...mapActions(['removeFromCart']),
+    ...mapActions(["removeFromCart"]),
 
     removeProduct(id) {
-      this.removeFromCart(id)
-    }
-  }
+      this.removeFromCart(id);
+    },
+  },
 };
 </script>
 
